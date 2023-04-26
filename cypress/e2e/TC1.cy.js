@@ -129,7 +129,7 @@ describe("SignIn", () => {
       });            
     s.submit().click().trigger( "Please fill out this field");    
   });
-  it("Verify login functionality with some no credentials", () => {
+  it ("Verify login functionality with some no credentials", () => {
     registration.visit();
     registration.getUsername().type(registration.generateRandomName(6, ""));
     registration
